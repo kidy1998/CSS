@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+#weight-test {
+    font-size: 34px;
+} 
+
+#weight-test > li:nth-child(1) { font-weight: 600;}
+#weight-test > li:nth-child(2) { font-weight: bold;}
+#weight-test > li:nth-child(3) { font-weight: bolder;}
+
+.cls > li {font-size: 24px;}
+
+#family-test1 > li:nth-child(1){
+    font-family: '궁서'; 
+    /* 내장되있는 글씨체, 만약 없으면 기본폰트로 설정*/
+}
+
+/* import는 css파일 최상단에 작성 */
+#family-test1 > li:nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#family-test1 > li:nth-child(3) {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+}

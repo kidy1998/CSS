@@ -1,0 +1,30 @@
+#test1 > p:only-child{
+    background-color: blue;
+}
+
+#test2 > pre:only-of-type{
+    background-color: aqua;
+}
+
+#test3 > p:empty{
+    background-color: green;
+    height: 30px;
+}
+
+/* 여러 선택자 동시선택 .선택자는 클래스인 경우 */
+#test4-1, #test4-2, .test4-3{
+    background-color: yellow;
+    border: 3px solid black;
+}
+
+/* 특정 요소 내부의 특정 클래스 선택 */
+#test5-1 .c5{
+    /* #test5-1의 후손 중 클래스가 c5 선택 ( > .c5 로도 가능) */
+    background-color: red;
+}
+
+#test5-2 > li.c5{
+    /* #test5-2 의 자식 중
+    클래스가 c5인 li요소만 선택(li와 c5 띄어쓰면 안됨 -> 자손으로 해석) */
+    background-color: beige;
+}

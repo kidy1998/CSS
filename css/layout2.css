@@ -1,0 +1,82 @@
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+}
+
+/* content 영역 */
+.content{
+    width: 150px;
+    height: 150px;
+
+    /* width / height 속성은
+    기본적으로 content 영역의 크기를 지정하는 속성 */
+}
+
+/* border */
+.border {
+    border: 10px solid red;
+}
+
+/* padding */
+.padding {
+    padding: 30px
+}
+
+/* 서로 다른 요소의 margin이 겹친 경우 
+더 큰 margin을 가진 요소의 값을 따른다 */
+.margin {
+    margin: 50px;
+}
+
+#m1 { 
+    margin: 100px;
+}
+/* -=============================================== */
+
+.padding-test {
+    /* padding 속성 : 작성법에 따라 특정 방향에 크기 지정 
+    값 1개 : 상하좌우
+    값 2개 : 상하, 좌우
+    값 3개 : 상, 좌우, 하
+    값 4개 : 상,우,하,좌
+    */
+    padding : 10px 20px 30px 40px;
+}
+
+.border-test {
+    /* 속성이 조금 다름 
+    border 속성은 상화좌우 방향을 별도로 지정할 수 없음 -> 직접 지정*/
+    border-top: 1px solid black;
+    border-bottom: 2px solid red;
+    border-left: 5px double yellow;
+    border-right: 10px dotted green;   
+}
+
+.box-container {
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+}
+
+/* margin-auto 테스트*/
+.margin-auto {
+    margin-top: 100px;
+    margin: auto;
+    /* margin-auto 이전에 명령어는 전부 덮어쓰기됨
+    -> 밑에다 작성 */
+    margin-top: 100px;
+}
+
+#box-sizing{
+    /* 테두리 10px, 패딩 20px, 내용 나머지
+    전체 요소 크기가 가로 세로 300px */
+
+    border: 10px solid black;
+    padding: 20px;
+
+    width: 300px;
+    height: 300px;
+
+    box-sizing: border-box;
+}
